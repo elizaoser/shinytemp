@@ -1,0 +1,79 @@
+Launching jupyter-lab
+[I 2023-07-18 18:37:07.768 ServerApp] jupyter_offlinenotebook | extension was successfully linked.
+[I 2023-07-18 18:37:07.768 ServerApp] jupyter_resource_usage | extension was successfully linked.
+[I 2023-07-18 18:37:07.779 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-18 18:37:07.779 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2023-07-18 18:37:07.788 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[W 2023-07-18 18:37:07.791 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.791 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.791 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.791 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.791 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-18 18:37:07.798 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-07-18 18:37:07.802 NotebookApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-18 18:37:07.802 NotebookApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-18 18:37:07.802 NotebookApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.802 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-18 18:37:07.803 NotebookApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-18 18:37:07.809 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-07-18 18:37:07.813 ServerApp] Writing Jupyter server cookie secret to /home/jovyan/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2023-07-18 18:37:08.242 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-18 18:37:08.297 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-18 18:37:08.298 ServerApp] jupyter_offlinenotebook | extension was successfully loaded.
+[I 2023-07-18 18:37:08.300 ServerApp] jupyter_resource_usage | extension was successfully loaded.
+[I 2023-07-18 18:37:08.300 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-18 18:37:08.300 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/jovyan
+[I 2023-07-18 18:37:08.300 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/jovyan/.local/share/jupyter/file_id_manager.db
+[I 2023-07-18 18:37:08.301 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-18 18:37:08.301 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-18 18:37:08.310 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-18 18:37:08.333 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2023-07-18 18:37:08.335 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-07-18 18:37:08.336 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.9/site-packages/jupyterlab
+[I 2023-07-18 18:37:08.336 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 2023-07-18 18:37:08.347 ServerApp] jupyterlab | extension was successfully loaded.
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2023-07-18 18:37:08.355 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-07-18 18:37:08.355 ServerApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 2023-07-18 18:37:08.356 ServerApp] Serving notebooks from local directory: /home/jovyan
+[I 2023-07-18 18:37:08.356 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-07-18 18:37:08.356 ServerApp] http://jupyter-elizaoser-2dshinytemp-2dwqvbk9u3:8888/binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/lab?token=...
+[I 2023-07-18 18:37:08.356 ServerApp]  or http://127.0.0.1:8888/binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/lab?token=...
+[I 2023-07-18 18:37:08.357 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-07-18 18:37:08.363 ServerApp] No web browser found: could not locate runnable browser.
+[I 2023-07-18 18:37:11.085 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/ (10.244.1.64) 1.75ms
+[I 2023-07-18 18:37:11.474 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/?token=[secret] (128.146.189.96) 1.66ms
+[W 2023-07-18 18:37:16.519 ServerApp] 404 GET /binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/api/me?1689705436086 (128.146.189.96) 403.50ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/lab
+[I 2023-07-18 18:37:19.681 LabApp] Build is up to date
+[I 2023-07-18 18:38:12.027 ServerApp] Saving file at /lm/app.r
+[2023-07-18T18:38:19.277] [INFO] shiny-server - Shiny Server v1.5.17.973 (Node.js v12.22.6)
+[2023-07-18T18:38:19.296] [INFO] shiny-server - Using config file "/tmp/tmpzokmdcd4"
+[W 2023-07-18 18:38:19.324 ServerApp] 500 GET /binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/shiny/ (128.146.189.96): could not start shiny in time
+[E 2023-07-18 18:38:19.332 ServerApp] {
+      "Host": "notebooks.gesis.org",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Referer": "https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/lab/tree/lm",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+[E 2023-07-18 18:38:19.332 ServerApp] 500 GET /binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/shiny/ (128.146.189.96) 5154.88ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-wqvbk9u3/lab/tree/lm
+[I 2023-07-18 18:38:24.552 ServerApp] Saving file at /lm/app.r
+[2023-07-18T18:38:28.639] [INFO] shiny-server - Shiny Server v1.5.17.973 (Node.js v12.22.6)
+[2023-07-18T18:38:28.641] [INFO] shiny-server - Using config file "/tmp/tmpadze6rlk"
+[2023-07-18T18:38:28.830] [INFO] shiny-server - Starting listener on http://[::]:40763
+[2023-07-18T18:38:32.304] [INFO] shiny-server - Created bookmark state directory: /home/jovyan/bookmarks
+[2023-07-18T18:38:32.305] [INFO] shiny-server - Created user bookmark state directory: /home/jovyan/bookmarks/jovyan
+[I 2023-07-18 18:38:46.261 ServerApp] Trying to establish websocket connection to ws://localhost:40763/lm/__sockjs__/n=xfuGGKKDh72Ffm09v4/554/2p2fc2s0/websocket
+[I 2023-07-18 18:38:46.296 ServerApp] Websocket connection established to ws://localhost:40763/lm/__sockjs__/n=xfuGGKKDh72Ffm09v4/554/2p2fc2s0/websocket
+[I 2023-07-18 18:39:34.638 ServerApp] New terminal with automatic name: 1
