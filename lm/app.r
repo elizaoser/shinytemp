@@ -8,12 +8,14 @@
 #
 
 library(shiny)
+library(ggplot2)
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("Linear Modeling Dashboard"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
@@ -54,13 +56,18 @@ ui <- fluidPage(
             radioButtons("disp", "Display",
                          choices = c(Head = "head",
                                      All = "all"),
-                         selected = "head")
+                         selected = "head"),
+            
+            # Checkbox to display linear model plot
+            checkboxGroupInput("checkbox", "Linear Model", c("Linear Model" = "Linear Model"))
+            
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot"),
-           plotOutput("lmPlot"),
+           #plotOutput("distPlot"),
+           plotOutput("lmPlot"), 
+           textOutput("summary"),
            tableOutput("contents")
         )
     )
@@ -78,25 +85,46 @@ server <- function(input, output) {
                        quote = input$quote)
         return(df)
     })
+     
     
-    # output$distPlot <- renderPlot({
-    #     # generate bins based on input$bins from ui.R
-    #     x    <- faithful[, 2]
-    #     bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    #     print(bins)
-    #     # draw the histogram with the specified number of bins
-    #     hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    # })
-    # 
+   # output$distPlot <- renderPlot({
+    #    ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+ # geom_point(colour = 'red') +
+#  ggtitle('y vs x') +
+ # xlab('x') +
+ # ylab('y')
+  #  })
     
-    output$distPlot <- renderPlot({
-        plot(dataInput()$x,dataInput()$y)
+    output$lmPlot <- renderPlot({
+        if (length(input$checkbox) == 0) {
+        ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+  geom_point(colour = 'red') +
+  ggtitle('y vs x') +
+  xlab('x') +
+  ylab('y')
+           }
+        else {
+            ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+  geom_point(colour = 'red') +
+  geom_line(aes(x = dataInput()$x, y = predict(lm(formula = y ~ x,
+               data = dataInput()), newdata = dataInput())),
+            colour = 'blue') +
+  ggtitle('Model of y vs x') +
+  xlab('x') +
+  ylab('y')
+        }
     })
     
-    output$lmtPlot <- renderPlot({
-        plot(dataInput()$x,dataInput()$y)
-    })
-    
+
+    output$summary <- renderPrint({
+        if (length(input$checkbox) == 1) {
+        print(summary(lm(formula = y ~ x,
+               data = dataInput())))
+         }
+        else {
+            print("No Linear Model")
+            }
+        })
     
     output$contents <- renderTable({
         
