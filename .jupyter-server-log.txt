@@ -77,3 +77,66 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 2023-07-18 18:38:46.261 ServerApp] Trying to establish websocket connection to ws://localhost:40763/lm/__sockjs__/n=xfuGGKKDh72Ffm09v4/554/2p2fc2s0/websocket
 [I 2023-07-18 18:38:46.296 ServerApp] Websocket connection established to ws://localhost:40763/lm/__sockjs__/n=xfuGGKKDh72Ffm09v4/554/2p2fc2s0/websocket
 [I 2023-07-18 18:39:34.638 ServerApp] New terminal with automatic name: 1
+Launching jupyter-lab
+[I 2023-07-19 14:49:34.632 ServerApp] jupyter_offlinenotebook | extension was successfully linked.
+[I 2023-07-19 14:49:34.632 ServerApp] jupyter_resource_usage | extension was successfully linked.
+[I 2023-07-19 14:49:34.641 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-19 14:49:34.641 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2023-07-19 14:49:34.648 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[W 2023-07-19 14:49:34.652 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.652 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.652 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.652 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.652 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-19 14:49:34.658 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-07-19 14:49:34.662 NotebookApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-19 14:49:34.662 NotebookApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-19 14:49:34.662 NotebookApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.662 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-19 14:49:34.662 NotebookApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-19 14:49:34.668 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-07-19 14:49:35.170 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-19 14:49:35.238 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-19 14:49:35.239 ServerApp] jupyter_offlinenotebook | extension was successfully loaded.
+[I 2023-07-19 14:49:35.241 ServerApp] jupyter_resource_usage | extension was successfully loaded.
+[I 2023-07-19 14:49:35.241 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-19 14:49:35.242 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/jovyan
+[I 2023-07-19 14:49:35.242 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/jovyan/.local/share/jupyter/file_id_manager.db
+[I 2023-07-19 14:49:35.292 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-19 14:49:35.292 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-19 14:49:35.293 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-19 14:49:35.393 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2023-07-19 14:49:35.397 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-07-19 14:49:35.398 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.9/site-packages/jupyterlab
+[I 2023-07-19 14:49:35.398 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 2023-07-19 14:49:35.411 ServerApp] jupyterlab | extension was successfully loaded.
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2023-07-19 14:49:35.419 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-07-19 14:49:35.419 ServerApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 2023-07-19 14:49:35.420 ServerApp] Serving notebooks from local directory: /home/jovyan
+[I 2023-07-19 14:49:35.420 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-07-19 14:49:35.420 ServerApp] http://jupyter-elizaoser-2dshinytemp-2dkl51bnsc:8888/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/lab?token=...
+[I 2023-07-19 14:49:35.420 ServerApp]  or http://127.0.0.1:8888/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/lab?token=...
+[I 2023-07-19 14:49:35.420 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-07-19 14:49:35.427 ServerApp] No web browser found: could not locate runnable browser.
+[I 2023-07-19 14:49:35.994 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/ (10.244.1.67) 2.18ms
+[I 2023-07-19 14:49:36.385 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/?token=[secret] (128.146.189.96) 1.52ms
+[W 2023-07-19 14:49:41.056 ServerApp] 404 GET /binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/api/me?1689778180302 (128.146.189.96) 36.98ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/lab
+[I 2023-07-19 14:49:44.523 LabApp] Build is up to date
+[I 2023-07-19 14:52:24.824 ServerApp] New terminal with automatic name: 1
+[I 2023-07-19 14:53:24.451 ServerApp] Saving file at /lm/app.r
+[I 2023-07-19 14:53:56.586 ServerApp] Saving file at /lm/app.r
+[I 2023-07-19 14:57:15.446 ServerApp] Saving file at /lm_with_download/app.r
+[I 2023-07-19 14:58:47.152 ServerApp] Saving file at /lm_with_download/app.r

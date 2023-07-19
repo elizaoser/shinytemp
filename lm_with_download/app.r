@@ -59,16 +59,23 @@ ui <- fluidPage(
                          selected = "head"),
             
             # Checkbox to display linear model plot
-            checkboxGroupInput("checkbox", "Linear Model", c("Linear Model" = "Linear Model"))
+            checkboxGroupInput("checkbox", "Linear Model", c("Linear Model" = "Linear Model")),
+            
+            radioButtons("var1", "Select the file type", 
+                         choices = c("png", "pdf"), 
+                         selected = "png")
             
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-           #plotOutput("distPlot"),
+           plotOutput("distPlot"),
            plotOutput("lmPlot"), 
+           downloadButton("down1","Download the plot"),
+           downloadButton("down2","Download the linear model plot"),
            textOutput("summary"),
            tableOutput("contents")
+           
         )
     )
 )
@@ -87,7 +94,7 @@ server <- function(input, output) {
     })
      
     
- output$distPlot <- renderPlot({
+    output$distPlot <- renderPlot({
         ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
               geom_point(colour = 'red') +
               ggtitle('y vs x') +
@@ -112,6 +119,52 @@ server <- function(input, output) {
     })
     
 
+    output$down1 <- downloadHandler(
+    filename =  function() {
+      paste("data", input$var1, sep=".")
+    },
+    content = function(file) {
+      if (input$var1 == "png") {
+        png(file) # open the png device
+      } else {
+        pdf(file) # open the pdf device
+      }
+      print(
+        ggplot(dataInput(), aes(x = x, y = y)) +
+          geom_point(colour = 'red') +
+          ggtitle('Model of y vs x') +
+          xlab('x') +
+          ylab('y')
+      ) # draw the plot
+      dev.off()  # turn the device off
+    }
+  )
+    
+    
+  output$down2 <- downloadHandler(
+    filename =  function() {
+      paste("data", input$var1, sep=".")
+    },
+    content = function(file) {
+      if (input$var1 == "png") {
+        png(file) # open the png device
+      } else {
+        pdf(file) # open the pdf device
+      }
+      print(
+        ggplot(dataInput(), aes(x = x, y = y)) +
+          geom_point(colour = 'red') +
+          geom_line(aes(y = predict(lm(formula = y ~ x, data = dataInput()), newdata = dataInput())),
+                    colour = 'blue') +
+          ggtitle('Model of y vs x') +
+          xlab('x') +
+          ylab('y')
+      ) # draw the plot
+      dev.off()  # turn the device off
+    }
+  )
+    
+   
         output$summary <- renderPrint({
         if (length(input$checkbox) == 1) {
         print(summary(lm(formula = y ~ x,
