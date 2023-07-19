@@ -140,3 +140,25 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 2023-07-19 14:53:56.586 ServerApp] Saving file at /lm/app.r
 [I 2023-07-19 14:57:15.446 ServerApp] Saving file at /lm_with_download/app.r
 [I 2023-07-19 14:58:47.152 ServerApp] Saving file at /lm_with_download/app.r
+[2023-07-19T15:10:07.725] [INFO] shiny-server - Shiny Server v1.5.17.973 (Node.js v12.22.6)
+[2023-07-19T15:10:07.728] [INFO] shiny-server - Using config file "/tmp/tmpjxpo11ok"
+[2023-07-19T15:10:07.906] [INFO] shiny-server - Starting listener on http://[::]:41215
+[2023-07-19T15:10:11.756] [INFO] shiny-server - Created bookmark state directory: /home/jovyan/bookmarks
+[2023-07-19T15:10:11.757] [INFO] shiny-server - Created user bookmark state directory: /home/jovyan/bookmarks/jovyan
+[I 2023-07-19 15:10:19.561 ServerApp] Trying to establish websocket connection to ws://localhost:41215/lm_with_download/__sockjs__/n=yfHUnkU5TWcRULK4eu/786/o0z5qpi0/websocket
+[I 2023-07-19 15:10:19.611 ServerApp] Websocket connection established to ws://localhost:41215/lm_with_download/__sockjs__/n=yfHUnkU5TWcRULK4eu/786/o0z5qpi0/websocket
+[2023-07-19T15:11:23.397] [INFO] shiny-server - Error getting worker: Error: The application exited during initialization.
+[E 2023-07-19 15:11:23.424 ServerApp] {
+      "Host": "notebooks.gesis.org",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Referer": "https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/shiny/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+[E 2023-07-19 15:11:23.424 ServerApp] 500 GET /binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/shiny/lm/ (128.146.189.96) 3785.14ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/shiny/
+[I 2023-07-19 15:12:08.208 ServerApp] Saving file at /lm/app.r
+[I 2023-07-19 15:12:15.363 ServerApp] Trying to establish websocket connection to ws://localhost:41215/lm/__sockjs__/n=8gY2EIN5zQ8PADtltg/140/cp0rzxcs/websocket
+[I 2023-07-19 15:12:15.370 ServerApp] Websocket connection established to ws://localhost:41215/lm/__sockjs__/n=8gY2EIN5zQ8PADtltg/140/cp0rzxcs/websocket
+[I 2023-07-19 15:14:27.302 ServerApp] Saving file at /lm/app.r
+[I 2023-07-19 15:14:29.681 ServerApp] Trying to establish websocket connection to ws://localhost:41215/lm/__sockjs__/n=qJPwiEftmxuolSnHyq/415/p1cxq1kz/websocket
+[I 2023-07-19 15:14:29.686 ServerApp] Websocket connection established to ws://localhost:41215/lm/__sockjs__/n=qJPwiEftmxuolSnHyq/415/p1cxq1kz/websocket
+[I 2023-07-19 15:14:53.166 ServerApp] Saving file at /lm/app.r

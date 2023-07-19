@@ -65,7 +65,7 @@ ui <- fluidPage(
 
         # Show a plot of the generated distribution
         mainPanel(
-           #plotOutput("distPlot"),
+           plotOutput("distPlot"),
            plotOutput("lmPlot"), 
            textOutput("summary"),
            tableOutput("contents")
@@ -87,12 +87,12 @@ server <- function(input, output) {
     })
      
     
- output$distPlot <- renderPlot({
-        ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
-              geom_point(colour = 'red') +
-              ggtitle('y vs x') +
-              xlab('x') +
-              ylab('y')
+     output$distPlot <- renderPlot({
+            ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+                  geom_point(colour = 'red') +
+                  ggtitle('y vs x') +
+                  xlab('x') +
+                  ylab('y')
     })
     
     output$lmPlot <- renderPlot({
