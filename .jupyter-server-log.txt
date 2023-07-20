@@ -318,3 +318,10 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 2023-07-20 15:59:49.649 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=NjxaT6tlzopdnCqMm2/481/0jqwgems/websocket
 [I 2023-07-20 16:00:14.957 ServerApp] Saving file at /lm_with_plotly/app.r
 [I 2023-07-20 16:00:48.792 ServerApp] New terminal with automatic name: 2
+[I 2023-07-20 16:02:04.502 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm/__sockjs__/n=C6oy4toWV929QasirS/616/l0ux0mmy/websocket
+[I 2023-07-20 16:02:04.508 ServerApp] Websocket connection established to ws://localhost:56505/lm/__sockjs__/n=C6oy4toWV929QasirS/616/l0ux0mmy/websocket
+[I 2023-07-20 16:02:38.182 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_download/__sockjs__/n=3Y9i31HzzzkVNBHoRO/623/htzulzjc/websocket
+[I 2023-07-20 16:02:38.188 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_download/__sockjs__/n=3Y9i31HzzzkVNBHoRO/623/htzulzjc/websocket
+[I 2023-07-20 16:03:36.902 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_plotly/__sockjs__/n=EDmJUur7Qesk9FGObS/868/fju3i0tc/websocket
+[I 2023-07-20 16:03:36.909 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=EDmJUur7Qesk9FGObS/868/fju3i0tc/websocket
+[I 2023-07-20 16:04:58.952 ServerApp] New terminal with automatic name: 3
