@@ -247,3 +247,74 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [E 2023-07-20 15:36:32.583 ServerApp] 500 GET /user/elizaoser-shinytemp-ulom3udf/shiny/lm_with_plotly/ (128.146.189.96) 2233.82ms referer=https://hub.ovh2.mybinder.org/user/elizaoser-shinytemp-ulom3udf/shiny/
 [I 2023-07-20 15:36:36.830 ServerApp] Saving file at /lm_with_plotly/app.r
 [I 2023-07-20 15:36:54.257 ServerApp] Saving file at /binder/environment.yml
+Launching jupyter-lab
+[I 2023-07-20 15:58:04.178 ServerApp] jupyter_offlinenotebook | extension was successfully linked.
+[I 2023-07-20 15:58:04.178 ServerApp] jupyter_resource_usage | extension was successfully linked.
+[I 2023-07-20 15:58:04.187 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-07-20 15:58:04.187 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2023-07-20 15:58:04.195 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[W 2023-07-20 15:58:04.198 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.198 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.198 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.198 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.198 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-20 15:58:04.205 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-07-20 15:58:04.209 NotebookApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-20 15:58:04.209 NotebookApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2023-07-20 15:58:04.209 NotebookApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.209 NotebookApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-07-20 15:58:04.209 NotebookApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-07-20 15:58:04.215 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-07-20 15:58:04.617 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-20 15:58:04.690 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-20 15:58:04.691 ServerApp] jupyter_offlinenotebook | extension was successfully loaded.
+[I 2023-07-20 15:58:04.694 ServerApp] jupyter_resource_usage | extension was successfully loaded.
+[I 2023-07-20 15:58:04.694 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-07-20 15:58:04.695 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/jovyan
+[I 2023-07-20 15:58:04.695 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/jovyan/.local/share/jupyter/file_id_manager.db
+[I 2023-07-20 15:58:04.699 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-07-20 15:58:04.699 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-07-20 15:58:04.701 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-07-20 15:58:04.729 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2023-07-20 15:58:04.731 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-07-20 15:58:04.732 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.9/site-packages/jupyterlab
+[I 2023-07-20 15:58:04.732 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 2023-07-20 15:58:04.743 ServerApp] jupyterlab | extension was successfully loaded.
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                                                                           
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 2023-07-20 15:58:04.751 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-07-20 15:58:04.751 ServerApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 2023-07-20 15:58:04.753 ServerApp] Serving notebooks from local directory: /home/jovyan
+[I 2023-07-20 15:58:04.753 ServerApp] Jupyter Server 1.23.6 is running at:
+[I 2023-07-20 15:58:04.753 ServerApp] http://jupyter-elizaoser-2dshinytemp-2dlv4grrtd:8888/binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/lab?token=...
+[I 2023-07-20 15:58:04.753 ServerApp]  or http://127.0.0.1:8888/binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/lab?token=...
+[I 2023-07-20 15:58:04.753 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-07-20 15:58:04.760 ServerApp] No web browser found: could not locate runnable browser.
+[I 2023-07-20 15:58:05.496 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/ (10.244.1.70) 2.01ms
+[I 2023-07-20 15:58:05.911 ServerApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/?token=[secret] (128.146.189.96) 1.42ms
+[W 2023-07-20 15:58:08.964 ServerApp] 404 GET /binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/api/me?1689868687998 (128.146.189.96) 34.21ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/lab
+[I 2023-07-20 15:58:15.891 ServerApp] New terminal with automatic name: 1
+[I 2023-07-20 15:58:15.902 LabApp] Build is up to date
+[2023-07-20T15:58:40.643] [INFO] shiny-server - Shiny Server v1.5.17.973 (Node.js v12.22.6)
+[2023-07-20T15:58:40.645] [INFO] shiny-server - Using config file "/tmp/tmpziwok7t1"
+[2023-07-20T15:58:40.888] [INFO] shiny-server - Starting listener on http://[::]:56505
+[2023-07-20T15:58:43.021] [INFO] shiny-server - Created bookmark state directory: /home/jovyan/bookmarks
+[2023-07-20T15:58:43.022] [INFO] shiny-server - Created user bookmark state directory: /home/jovyan/bookmarks/jovyan
+[I 2023-07-20 15:58:48.642 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_plotly/__sockjs__/n=nRnQphzpPtBaNngmP6/445/g51m0qyo/websocket
+[I 2023-07-20 15:58:48.658 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=nRnQphzpPtBaNngmP6/445/g51m0qyo/websocket
+[I 2023-07-20 15:59:46.548 ServerApp] Saving file at /lm_with_plotly/app.r
+[I 2023-07-20 15:59:49.642 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_plotly/__sockjs__/n=NjxaT6tlzopdnCqMm2/481/0jqwgems/websocket
+[I 2023-07-20 15:59:49.649 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=NjxaT6tlzopdnCqMm2/481/0jqwgems/websocket
+[I 2023-07-20 16:00:14.957 ServerApp] Saving file at /lm_with_plotly/app.r
+[I 2023-07-20 16:00:48.792 ServerApp] New terminal with automatic name: 2

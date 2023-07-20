@@ -133,8 +133,7 @@ server <- function(input, output) {
     
 
     output$distPlot <- renderPlotly({
-        plot_ly(dataInput(), x = dataInput()$x, y = dataInput()$y, type = 'scatter', 
-                mode = 'markers')
+        plot_ly(dataInput(), x = ~x, y = ~y, type = 'scatter', mode = 'markers', opacity = 1, name = "Data")
           })
 
     output$lmPlot <- renderPlotly({
