@@ -329,3 +329,24 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 2023-07-20 16:22:12.761 ServerApp] Saving file at /lm_with_bins/app.r
 [I 2023-07-20 16:22:21.546 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_bins/__sockjs__/n=lkSBQPCLlrq1SoBTKt/901/gsvvoj4g/websocket
 [I 2023-07-20 16:22:21.553 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_bins/__sockjs__/n=lkSBQPCLlrq1SoBTKt/901/gsvvoj4g/websocket
+[I 2023-07-20 16:31:16.256 LabApp] 302 GET /binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/lab (34.235.48.77) 4.04ms
+[I 2023-07-20 16:41:02.464 ServerApp] Saving file at /lm_with_plotly/app.r
+[I 2023-07-20 16:41:15.471 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_plotly/__sockjs__/n=ldy5oCMlRgTV9v0xeq/838/sdoqsnfa/websocket
+[I 2023-07-20 16:41:15.477 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=ldy5oCMlRgTV9v0xeq/838/sdoqsnfa/websocket
+[I 2023-07-20 16:41:54.040 ServerApp] Saving file at /lm_with_plotly/app.r
+[I 2023-07-20 16:42:41.102 ServerApp] Saving file at /lm_with_bins/app.r
+[I 2023-07-20 16:43:13.308 ServerApp] Saving file at /lm_with_bins/app.r
+[2023-07-20T16:43:28.365] [INFO] shiny-server - Error getting worker: Error: The application exited during initialization.
+[E 2023-07-20 16:43:28.391 ServerApp] {
+      "Host": "notebooks.gesis.org",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Referer": "https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/shiny/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+[E 2023-07-20 16:43:28.392 ServerApp] 500 GET /binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/shiny/lm_with_bins/ (128.146.189.96) 2443.76ms referer=https://notebooks.gesis.org/binder/jupyter/user/elizaoser-shinytemp-lv4grrtd/shiny/
+[I 2023-07-20 16:44:04.588 ServerApp] Saving file at /lm_with_bins/app.r
+[I 2023-07-20 16:44:11.851 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_bins/__sockjs__/n=wtiSPZmfB0HLRDU9Ev/638/aku41tpq/websocket
+[I 2023-07-20 16:44:11.860 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_bins/__sockjs__/n=wtiSPZmfB0HLRDU9Ev/638/aku41tpq/websocket
+[I 2023-07-20 16:44:17.151 ServerApp] Saving file at /lm_with_bins/app.r
+[I 2023-07-20 16:44:40.662 ServerApp] New terminal with automatic name: 5
+[I 2023-07-20 16:45:27.081 ServerApp] New terminal with automatic name: 6

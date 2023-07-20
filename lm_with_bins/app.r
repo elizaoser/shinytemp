@@ -87,8 +87,8 @@ ui <- fluidPage(
         mainPanel(
            plotlyOutput("distPlot"),
            plotlyOutput("lmPlot"), 
-           downloadButton("down1","Download the plot"),
-           downloadButton("down2","Download the linear model plot"),
+           downloadButton("down1","Download Scatter Plot"),
+           downloadButton("down2","Download Linear Model Plot"),
            textOutput("summary"),
            tableOutput("contents")
            

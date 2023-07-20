@@ -79,8 +79,8 @@ ui <- fluidPage(
         mainPanel(
            plotlyOutput("distPlot"),
            plotlyOutput("lmPlot"), 
-           downloadButton("down1","Download the plot"),
-           downloadButton("down2","Download the linear model plot"),
+           downloadButton("down1","Download Scatter Plot"),
+           downloadButton("down2","Download Linear Model Plot"),
            textOutput("summary"),
            tableOutput("contents")
            
@@ -177,8 +177,11 @@ server <- function(input, output) {
         pdf(file) # open the pdf device
       }
       print(
-         plot_ly(dataInput(), x = dataInput()$x, y = dataInput()$y, type = 'scatter', mode = 'markers',
-                      opacity = 0.65, trendline = 'ols', trendline_color_override = 'darkblue')
+         plot_ly(dataInput(), x = ~x, y = ~y, type = "scatter", mode = "markers",
+            opacity = 0.65, name = "Data") %>%
+              add_trace(type = "scatter", mode = "lines",
+                x = ~x, y = ~predict(lm(y ~ x, data = dataInput())),
+                line = list(color = "darkblue"), name = "Trendline")
       ) # draw the plot
       dev.off()  # turn the device off
     }
