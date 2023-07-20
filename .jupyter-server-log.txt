@@ -325,3 +325,7 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 2023-07-20 16:03:36.902 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_plotly/__sockjs__/n=EDmJUur7Qesk9FGObS/868/fju3i0tc/websocket
 [I 2023-07-20 16:03:36.909 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_plotly/__sockjs__/n=EDmJUur7Qesk9FGObS/868/fju3i0tc/websocket
 [I 2023-07-20 16:04:58.952 ServerApp] New terminal with automatic name: 3
+[I 2023-07-20 16:21:24.146 ServerApp] New terminal with automatic name: 4
+[I 2023-07-20 16:22:12.761 ServerApp] Saving file at /lm_with_bins/app.r
+[I 2023-07-20 16:22:21.546 ServerApp] Trying to establish websocket connection to ws://localhost:56505/lm_with_bins/__sockjs__/n=lkSBQPCLlrq1SoBTKt/901/gsvvoj4g/websocket
+[I 2023-07-20 16:22:21.553 ServerApp] Websocket connection established to ws://localhost:56505/lm_with_bins/__sockjs__/n=lkSBQPCLlrq1SoBTKt/901/gsvvoj4g/websocket
