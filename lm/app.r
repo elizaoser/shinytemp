@@ -118,7 +118,7 @@ server <- function(input, output) {
                data = dataInput())))
          }
         else {
-            print("-")
+            print(NULL)
             }
         })
     

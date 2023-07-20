@@ -11,9 +11,11 @@ dependencies:
   - r-reshape2
   - r-tidyverse
   - r-shiny
+  - r-plotly
   - pip
   - pip:
     - pandas
     - matplotlib
     - numpy
     - scipy
+    - plotly

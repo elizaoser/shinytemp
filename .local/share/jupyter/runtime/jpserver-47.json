@@ -1,5 +1,5 @@
 {
-  "base_url": "/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/",
+  "base_url": "/user/elizaoser-shinytemp-ulom3udf/",
   "hostname": "0.0.0.0",
   "password": false,
   "pid": 47,
@@ -7,7 +7,7 @@
   "root_dir": "/home/jovyan",
   "secure": false,
   "sock": "",
-  "token": "uNhep_2lQ8mHEeYv463l5w",
-  "url": "http://jupyter-elizaoser-2dshinytemp-2dkl51bnsc:8888/binder/jupyter/user/elizaoser-shinytemp-kl51bnsc/",
+  "token": "GMVupFCoTa-SDG9Cp8OwKA",
+  "url": "http://jupyter-elizaoser-2dshinytemp-2dulom3udf:8888/user/elizaoser-shinytemp-ulom3udf/",
   "version": "1.23.6"
 }

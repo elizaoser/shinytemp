@@ -6,9 +6,17 @@
 #
 #    http://shiny.rstudio.com/
 #
+#install.packages("plotly", update = TRUE)
 
+#install.packages("shiny")
+#install.packages("tidyverse")
+#install.packages("plotly")
+#install.packages("shinyMatrix")
+
+#devtools::install_github("ropensci/plotly")
 library(shiny)
 library(ggplot2)
+library(plotly)
 
 
 # Define UI for application that draws a histogram
@@ -69,13 +77,18 @@ ui <- fluidPage(
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot"),
-           plotOutput("lmPlot"), 
+           plotlyOutput("distPlot"),
+           plotlyOutput("lmPlot"), 
            downloadButton("down1","Download the plot"),
            downloadButton("down2","Download the linear model plot"),
            textOutput("summary"),
            tableOutput("contents")
            
+        #   downloadablePlotUI("Linear Model", 
+         #          downloadtypes = c("png"), 
+          #         download_hovertext = "Download the plot here!",
+           #        height = "500px", 
+            #       btn_halign = "left")
         )
     )
 )
@@ -94,30 +107,47 @@ server <- function(input, output) {
     })
      
     
-    output$distPlot <- renderPlot({
-        ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
-              geom_point(colour = 'red') +
-              ggtitle('y vs x') +
-              xlab('x') +
-              ylab('y')
-    })
+#    output$distPlot <- renderPlot({
+ #       ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+#              geom_point(colour = 'red') +
+#              ggtitle('y vs x') +
+#              xlab('x') +
+#              ylab('y')
+#    })
     
-    output$lmPlot <- renderPlot({
-        if (length(input$checkbox) == 0) {
-            print("No Linear Model")
-           }
-        else {
-            ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
-                  geom_point(colour = 'red') +
-                  geom_line(aes(x = dataInput()$x, y = predict(lm(formula = y ~ x,
-                            data = dataInput()), newdata = dataInput())),
-                            colour = 'blue') +
-                  ggtitle('Model of y vs x') +
-                  xlab('x') +
-                  ylab('y')
-        }
-    })
+#    output$lmPlot <- renderPlot({
+ #       if (length(input$checkbox) == 0) {
+#            print("No Linear Model")
+ #          }
+  #      else {
+#            ggplot(dataInput(), aes(x = dataInput()$x, y = dataInput()$y)) +
+ #                 geom_point(colour = 'red') +
+ #                 geom_line(aes(x = dataInput()$x, y = predict(lm(formula = y ~ x,
+ #                           data = dataInput()), newdata = dataInput())),
+ #                           colour = 'blue') +
+  #                ggtitle('Model of y vs x') +
+ #                 xlab('x') +
+ #                 ylab('y')
+ #       }
+ #   })
     
+
+    output$distPlot <- renderPlotly({
+        plot_ly(dataInput(), x = dataInput()$x, y = dataInput()$y, type = 'scatter', 
+                mode = 'markers')
+          })
+
+    output$lmPlot <- renderPlotly({
+          if (length(input$checkbox) == 0) {
+            return(NULL)  # Return NULL to avoid errors when checkbox is empty
+          } else {
+            plot_ly(dataInput(), x = ~x, y = ~y, type = "scatter", mode = "markers",
+            opacity = 0.65, name = "Data") %>%
+              add_trace(type = "scatter", mode = "lines",
+                x = ~x, y = ~predict(lm(y ~ x, data = dataInput())),
+                line = list(color = "darkblue"), name = "Trendline")
+          }
+        })
 
     output$down1 <- downloadHandler(
     filename =  function() {
@@ -130,11 +160,7 @@ server <- function(input, output) {
         pdf(file) # open the pdf device
       }
       print(
-        ggplot(dataInput(), aes(x = x, y = y)) +
-          geom_point(colour = 'red') +
-          ggtitle('Model of y vs x') +
-          xlab('x') +
-          ylab('y')
+        plot_ly(dataInput(), x = dataInput()$x, y = dataInput()$y, type = 'scatter', mode = 'markers')
       ) # draw the plot
       dev.off()  # turn the device off
     }
@@ -152,17 +178,18 @@ server <- function(input, output) {
         pdf(file) # open the pdf device
       }
       print(
-        ggplot(dataInput(), aes(x = x, y = y)) +
-          geom_point(colour = 'red') +
-          geom_line(aes(y = predict(lm(formula = y ~ x, data = dataInput()), newdata = dataInput())),
-                    colour = 'blue') +
-          ggtitle('Model of y vs x') +
-          xlab('x') +
-          ylab('y')
+         plot_ly(dataInput(), x = dataInput()$x, y = dataInput()$y, type = 'scatter', mode = 'markers',
+                      opacity = 0.65, trendline = 'ols', trendline_color_override = 'darkblue')
       ) # draw the plot
       dev.off()  # turn the device off
     }
   )
+    # downloadablePlot("Linear Model",
+    #             logger = ss_userAction.Log,
+     #            filenameroot = "Linear_Model",
+      #           aspectratio = 1.33,
+       #          downloadfxns = list(png = myplotfxn),
+        #         visibleplot = myplotfxn)
     
    
         output$summary <- renderPrint({
